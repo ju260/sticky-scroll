@@ -1,0 +1,16 @@
+@mixin txt1() {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+@mixin txt2() {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+@mixin txt3() {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 18px;
+}

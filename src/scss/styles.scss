@@ -1,0 +1,131 @@
+@import "_normalize.css";
+@import "typos.scss";
+.nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 5%;
+    }
+    &__li {
+        color: blue;
+        font-size: 15px;
+    }
+    &__a {
+        color: white;
+        text-decoration: none;
+        @include txt1();
+        text-transform: uppercase
+    }
+}
+
+.header {
+    &__bg {
+        background: url(/../dist/img/header-bg.png) no-repeat;
+        background-size: 100% auto;
+        height: 48vw;
+        margin-bottom: 100px;
+        display: flex;
+    }
+    &__visu {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__title {
+        display: inline-block;
+        margin: auto;
+        position: relative;
+    }
+}
+
+.twoCol {
+    display: flex;
+    width: 753px;
+    &__col1 {
+        width: 453px;
+        padding-right: 74px;
+    }
+    &__col2 {
+        width: 300px;
+        flex: 1;
+        position: relative;
+    }
+    &__aside {
+        width: 300px;
+    }
+}
+
+.footer {
+    &__bg {
+        //background: url(./dist/img/stormtroopers.jpg) no-repeat
+    }
+}
+
+.article {
+    &__img {
+        &--aLeft {
+            float: left;
+            margin: 0 15px 15px;
+        }
+    }
+    &__txt1 {
+        @include txt3();
+    }
+    &__txt2 {
+        @include txt1();
+    }
+    &__title {
+        @include txt2();
+        margin: 50px 0 25px;
+        &--aCenter {
+            text-align: center;
+        }
+    }
+    &__content {
+        padding: 0 5%;
+        width: 753px;
+        margin: 0 auto;
+        &--fullWidth {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    &__li {
+        @include txt1();
+    }
+    &--marg1 {
+        margin-top: 60px;
+    }
+}
+
+.abs {
+    position: absolute;
+}
+
+.fixedBottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.aside {
+    &__visu {
+        transition: 0.3s margin ease;
+    }
+}
+
+#kiloren {
+    background: url(/../dist/img/kiloren.jpg) no-repeat;
+    height: 30vw;
+    background-position: center 100%;
+}
+
+[data-parallax] {
+    transition: 0.2s;
+}
